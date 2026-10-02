@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laya Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+            <div class="form-section">
+                <form id="questionForm">
+                    <label for="stateInput">
+                        <span>State</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="stateInput" 
+                        name="state" 
+                        placeholder="State..."
+                        required
+                    >
+
+            <label>
+                <span>Questions</span>
+            </label>
+            <div id="questionsContainer"></div>
+            <button type="button" class="btn-add-question" onclick="addQuestion()">+ Add Question</button>
+
+            <button type="submit" id="runBtn">
+                Run
+            </button>
+                </form>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <h2>Results</h2>
+                <div id="resultsContent"></div>
+            </div>
+        </div>
+    </div>
+    <script src="api.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
